@@ -1,0 +1,12 @@
+<div ng-controller="productList" ng-show="rootData.showList" class="table pro-list">
+	<h3>
+		Product list:
+	</h3>
+	<div class="list-item" ng-repeat="product in products">
+		<div class="col-md-3 pro-name">{{product.id}}. {{product.name}}</div>
+		<div class="col-md-7 pro-desc">{{product.desc}}</div>
+		<div class="col-md-2">
+			<button ng-click="buy()" class="btn btn-default">buy</button>
+		</div>
+	</div>
+</div>
