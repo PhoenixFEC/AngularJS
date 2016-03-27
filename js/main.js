@@ -118,6 +118,7 @@ myTest.directive('loginbox', function() {
 						sessionStorage.setItem('password', password);
 						console.log('ID: ', sessionStorage.getItem('userId'), ', PW: ', sessionStorage.getItem('password'));
 					}
+					scope.rootData.userId = sessionStorage.getItem('userId');
 					scope.rootData.showLoginBox = false;
 					scope.rootData.showTopBar = true;
 					scope.rootData.showList = true;
